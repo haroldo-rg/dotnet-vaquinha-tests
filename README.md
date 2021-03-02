@@ -16,3 +16,27 @@ Projeto Base para Testes - .Net Core
 
 ## Slides
 [Slides em PDF](TesteNetCore.pdf)
+
+## Haroldo Gomes
+Alterações efetuadas como atividade do curso Implementando sua stack de testes de unidade e integrados em um projeto .NET de Crowdfunding da Digital Innovation One
+
+Projeto **Vaquinha.Domain**
+- Inclusão do atributo DoadorAceitouTaxa na entidade Doacao
+- Inclusão do atributo DoadorAceitouTaxa nas view models DoacaoViewModel e DoadorViewModel
+
+Projeto **Vaquinha.Unit.Tests**
+- Inclusão do caso de teste Doacao_DoadorAceitouDoacaoComTaxa_DoacaoValida aplicando a taxa de 20% na doação
+
+Projeto **Vaquinha.MVC**
+- Inclusão do campo DoadorAceitouTaxa na view /Doacoes/Create
+- Inclusão do campo DoadorAceitouTaxa na view /Doadores
+
+Projeto **Vaquinha.Automated.UI.Tests**
+- Inclusão do caso de teste DoacaoUI_CriacaoDoacaoComTaxaPagaPeloDoador
+  Ações executadas no teste:
+    1) Acessa a página */Home*
+    2) Clica no botão *Doar*
+    3) Verifica se a página */Doacoes/Create* foi carregada com sucesso
+    4) Efetua uma doação digitando nos campos do formulário os dados de uma entidade Doacao com valores validos e com a opção *Aceito pagar a taxa de 20%* selecionada
+    5) Verifica se a doação foi realizada com sucesso
+    6) Acessa a página */Doadores* e verifica se o nome do doador consta na lista e se o checkbox da coluna *Taxa paga pelo doador* está marcado

@@ -26,7 +26,7 @@ namespace Vaquinha.MVC
             }, new NToastNotifyOption
             {
                 DefaultSuccessTitle = "Yeah!",
-                DefaultSuccessMessage = "Operação realizada com sucesso!",
+                DefaultSuccessMessage = "Operaï¿½ï¿½o realizada com sucesso!",
 
                 DefaultErrorTitle = "Ops!",
                 DefaultErrorMessage = "Algo deu errado!"               
@@ -52,7 +52,7 @@ namespace Vaquinha.MVC
                 app.UseExceptionHandler("/Home/Error");
                 app.UseHsts();
             }
-            app.UseHttpsRedirection();
+            //app.UseHttpsRedirection();
             app.UseStaticFiles();
 
             app.UseRouting();
